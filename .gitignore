@@ -1,4 +1,5 @@
 .vscode/
+.DS_Store
 sample.png
 
 # Byte-compiled / optimized / DLL files
