@@ -76,7 +76,8 @@ class StatusImage():
             logging.info(f'Forecast, day: {day}. Starting x: {x}')
             day_name = self.getForecastDay(day)
             
-            canvas.line([(x, y), (x, y+height)], fill=BLACK, width=2)
+            if x > 1:
+                canvas.line([(x, y), (x, y+height)], fill=BLACK, width=2)
             
             # Day names
             date_width = canvas.textsize(day_name, day_name_font)[0]
